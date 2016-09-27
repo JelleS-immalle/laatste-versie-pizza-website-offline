@@ -3,7 +3,7 @@
 <head>
     <title></title>
 	<meta charset="utf-8" />
-    <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Lobster|Space+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Lobster|Space+Mono|Baloo+Bhai|Fjalla+One" rel="stylesheet">
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
 <style>
     body {
@@ -11,27 +11,38 @@
         padding: 0;
     }
 
-    #header{
+    .header{
         background-color: rgba(100, 100, 100, 0.2);
-        height: 75px;
+        height: 5em;
         width: 100%;
         text-align: center;
-        font-family: Lobster;
+        font-family: Fjalla One;
         }
+
+    .header ul{
+        padding: 0em;
+    }
+
+    .header a{
+        margin-right: 1em;
+        margin-left: 1em;
+    }
 
 	.footer{
         background-color: darkgray;
         width: 100%;
-        max-height: 200px;
-        height: 100px;
-        position: relative;
-        vertical-align: text-bottom;
-        font-family: Space Mono;
+        max-height: 4em;
+        height: 4em;
+        font-family: Fjalla One;
 	}
+
+    p.footer{
+        margin-top: 50%;
+    }
 	
 	#inhoud{
 		background-color: darkgray;
-        margin-top: 25px;
+        margin-top: 1em;
 		text-align: center;
 		position: relative;
         font-family: Fira Sans;
@@ -52,12 +63,13 @@
     	font-size: 25px;
     	color: #333;
     	text-align: center;
-    	margin-left: 10px;
-    	margin-right: 10px;
+    	margin-left: 1em;
+    	margin-right: 1em;
 	}
 
     a{
         text-decoration: none;
+        font-family: Baloo Bhai;
         color: #333;
         font-size: 2em;
         position: relative;
@@ -67,7 +79,7 @@
 </style>
 </head>
 <body>
-    <div id="header">
+    <div class="header">
 	<ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="index.html">Bestel</a></li>
@@ -75,7 +87,7 @@
 	</ul>
     </div>
 	
-	<div id="inhoud" class="pure-g">
+	<div class="pure-g inhoud">
 		<div class="pure-u-1-3"><p>Deze website gaat je helpen met het bestellen van pizza!</p></div>
         <div class="pure-u-1-3"><p>"Lekkere en degelijke pizza's" ~Klant</p></div>
         <div class="pure-u-1-3"><p>"Top levering en klant vriendelijkheid!" ~Klant</p></div>
